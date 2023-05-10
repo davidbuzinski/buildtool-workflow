@@ -17,6 +17,14 @@ classdef TestExamples < matlab.unittest.TestCase
 
     % Copyright 2022 The MathWorks, Inc.
 
+    methods (TestClassSetup)
+        function setup(testCase)
+            import matlab.unittest.fixtures.PathFixture;
+            testCase.applyFixture(PathFixture("../src"));
+        end
+
+    end
+
     methods (Test)
 
         function testNonLeapYear(testCase)
