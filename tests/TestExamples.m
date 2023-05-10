@@ -20,7 +20,7 @@ classdef TestExamples < matlab.unittest.TestCase
     methods (TestClassSetup)
         function setup(testCase)
             import matlab.unittest.fixtures.PathFixture;
-            testCase.applyFixture(PathFixture("../src"));
+            testCase.applyFixture(PathFixture("../code"));
         end
 
     end
